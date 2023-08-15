@@ -1,9 +1,13 @@
 <mat-toolbar color="primary">
-  <span>Tavares Locações</span>
-  <span class="example-spacer"></span>
-  <button mat-button *ngFor="let item of menu" [routerLink]="item.redirect">{{item.name}}</button>
-  <span class="example-spacer"></span>
-  <button mat-icon-button routerLink="/login" class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>logout</mat-icon>
-  </button>
+  <div class="container">
+    <div>Tavares Locações</div>
+    <div class="drop-menu">
+      <button mat-button *ngFor="let item of menu" [routerLink]="item.redirect">{{item.name}}</button>
+    </div>
+    <div>
+      <button mat-icon-button routerLink="/login">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+  </div>
 </mat-toolbar>

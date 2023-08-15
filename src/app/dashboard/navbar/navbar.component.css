@@ -4,3 +4,18 @@
 .mat-toolbar.mat-primary{
   background:#046cbc
 }
+
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+align-items: center;
+}
+
+.drop-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 40%;
+}
