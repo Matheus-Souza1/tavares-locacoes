@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Clientes",
+    "redirect": "/dashboard/clientes"
+  },
+  {
+    "name": "Ferramentas",
+    "redirect": "/dashboard/ferramentas"
+  },
+  {
+    "name": "Alugueis",
+    "redirect": "/dashboard/alugueis"
+  }
+]

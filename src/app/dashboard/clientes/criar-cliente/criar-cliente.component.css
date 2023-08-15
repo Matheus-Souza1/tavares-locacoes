@@ -1,0 +1,24 @@
+.input-cliente{
+  width: 85%;
+}
+
+.logo {
+  width: 100%; /* A logo ocupará 100% da largura do modal */
+  max-width: 250px; /* Limita a largura máxima da logo */
+  height: auto; /* A altura da logo será ajustada automaticamente */
+  margin-bottom: 20px;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  background:#046cbc;
+  color: white;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+
+  mat-form-field {
+    width: 100%;
+  }
+}

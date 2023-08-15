@@ -1,0 +1,32 @@
+<div mat-dialog-title>
+  <h2>Editar Ferramenta</h2>
+</div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="content">
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Codigo</mat-label>
+        <input matInput type="number" formControlName="codigo">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Descrição</mat-label>
+        <input matInput formControlName="descricao">
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Quantidade</mat-label>
+        <input matInput type="number" formControlName="quantidade">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Valor Diaria</mat-label>
+        <input matInput type="number" formControlName="valorDiaria">
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Editar</button>
+  </div>
+</form>

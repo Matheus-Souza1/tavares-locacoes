@@ -1,0 +1,15 @@
+<div class="login-container">
+  <mat-spinner *ngIf="loading" class="spinner" diameter="50"></mat-spinner>
+  <form *ngIf="!loading" [formGroup]="form" (ngSubmit)="ingresar()">
+    <div class="login-modal">
+      <img class="logo" src="assets/Logo-tavares.jpg" alt="Logo">
+      <div class="input-container">
+        <input class="input" type="text" placeholder="Usuário" formControlName="user">
+      </div>
+      <div class="input-container">
+        <input class="input" type="password" placeholder="Senha" formControlName="password">
+      </div>
+      <button type="submit" class="login-button" [disabled]="form.invalid">Entrar</button>
+    </div>
+  </form>
+</div>

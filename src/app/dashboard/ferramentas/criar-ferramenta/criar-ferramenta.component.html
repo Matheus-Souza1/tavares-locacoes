@@ -1,0 +1,40 @@
+<div class="container">
+  <mat-toolbar class="toolbar-div">
+    <span>Adicionar Ferramenta</span>
+  </mat-toolbar>
+
+  <mat-card style="margin-top: 10px;">
+    <mat-card-content>
+      <form [formGroup]="form" (ngSubmit)="adicionarFerramenta()">
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Codigo</mat-label>
+            <input matInput type="number" formControlName="codigo">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Descrição</mat-label>
+            <input matInput formControlName="descricao">
+          </mat-form-field>
+        </div>
+
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Quantidade</mat-label>
+            <input matInput type="number" formControlName="quantidade">
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Valo Diaria</mat-label>
+            <input matInput type="number" formControlName="valor">
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <button mat-raised-button style="margin-right: 20px;" routerLink="/dashboard/ferramentas">Voltar</button>
+          <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Adicionar</button>
+        </div>
+        <!-- <div class="cols" style="float: right; display: flex;">
+            <img src="assets/logo-tavares-2.jpg" width="300" height="300" alt="Logo">
+          </div> -->
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
